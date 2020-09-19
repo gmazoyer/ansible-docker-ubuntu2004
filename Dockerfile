@@ -14,7 +14,7 @@ RUN apt-get update \
                sudo systemd \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/doc && rm -rf /usr/share/man \
-    && apt-get clean
+    && apt-get clean \
     && echo 'Europe/Paris' > /etc/timezone
 
 ENV LC_ALL en_US.UTF-8

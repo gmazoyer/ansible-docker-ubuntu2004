@@ -15,6 +15,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/doc && rm -rf /usr/share/man \
     && apt-get clean
+    && echo 'Europe/Paris' > /etc/timezone
 
 ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
